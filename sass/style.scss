@@ -2,6 +2,7 @@
 
 :root {
   // Colors
+  --clr-primary-700: hsl(158, 36%, 22%);
   --clr-primary-400: hsl(158, 36%, 37%);
   --clr-primary-100: hsl(30, 38%, 92%);
 
@@ -118,6 +119,10 @@ h1 {
   outline: none;
   border-radius: 8px;
   padding: 0.9em 1.5em;
+
+  &:hover {
+    background-color: var(--clr-primary-700);
+  }
 
   img {
     display: inline;
