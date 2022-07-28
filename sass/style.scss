@@ -35,6 +35,9 @@ body {
   line-height: 1.75;
   color: var(--clr-neutral-400);
   background-color: var(--clr-primary-100);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -69,7 +72,6 @@ h1 {
 // general
 
 .preview {
-  margin-top: 4rem;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -82,7 +84,7 @@ h1 {
 
 .content {
   background-color: var(--clr-neutral-100);
-  padding: 1.5rem;
+  padding: 3rem;
 }
 
 .pre-heading {
