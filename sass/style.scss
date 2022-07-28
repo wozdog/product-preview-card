@@ -1,7 +1,5 @@
 @forward "./reset.scss";
 
-$clr-title: pink;
-
 :root {
   // Colors
   --clr-primary-400: hsl(158, 36%, 37%);
@@ -68,6 +66,19 @@ h1 {
 }
 
 // general
+
+.preview {
+  margin-top: 4rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .content {
   background-color: var(--clr-neutral-100);
   padding: 1.5rem;
