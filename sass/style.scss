@@ -17,22 +17,23 @@
   --fw-500: 500;
   --fw-700: 700;
 
+  --fs-300: 0.75rem; //12px
   --fs-400: 0.875rem; //14px
   --fs-600: 2rem; //32px
 
   --bp-mobile: 23.4375em; // 375px
   --bp-desktop: 90em; // 1440px
 
-  --max-width: 40rem;
+  --max-width: 37.5rem;
   --padding: 1rem;
-  --spacer: 1rem;
+  --spacer: 1.1rem;
 }
 
 body {
   font-family: var(--ff-default);
   font-weight: var(--fw-500);
   font-size: var(--fs-400);
-  line-height: 1.75;
+  line-height: 1.7;
   color: var(--clr-neutral-400);
   background-color: var(--clr-primary-100);
   min-height: 100vh;
@@ -44,7 +45,7 @@ h1 {
   font-family: var(--ff-accent);
   font-size: var(--fs-600);
   font-weight: var(--fw-700);
-  line-height: 1.1;
+  line-height: 1;
   color: var(--clr-neutral-900);
 }
 
@@ -84,12 +85,17 @@ h1 {
 
 .content {
   background-color: var(--clr-neutral-100);
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .pre-heading {
+  font-size: var(--fs-300);
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.4em;
+}
+
+.description {
+  margin-top: 1.4rem !important;
 }
 
 .price {
@@ -113,6 +119,8 @@ h1 {
   display: inline-flex;
   place-items: center;
   justify-content: center;
+  font-weight: var(--fw-700);
+  font-stretch: semi-expanded;
   gap: 0.6rem;
   width: 100%;
   color: var(--clr-neutral-100);
@@ -120,7 +128,7 @@ h1 {
   border: none;
   outline: none;
   border-radius: 8px;
-  padding: 0.9em 1.5em;
+  padding: 1.2em 1.5em;
 
   &:hover {
     background-color: var(--clr-primary-700);
